@@ -1,6 +1,6 @@
 export default [
   {
-    name: 'Model S',
+    name: 'BMW M8',
     tagline: 'Starting at $69,420',
     image: require('../../images/Model3.jpeg'),
   },
@@ -11,7 +11,7 @@ export default [
     image: require('../../images/ModelY.jpeg'),
   },
   {
-    name: 'Model 3',
+    name: 'TOYOTA G',
     tagline: 'Order Online for',
     taglineCTA: 'Touchless Delivery',
     image: require('../../images/Model3.jpeg'),

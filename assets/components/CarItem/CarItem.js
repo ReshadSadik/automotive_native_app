@@ -3,8 +3,11 @@ import './styles.js';
 import { ImageBackground, Text, View } from 'react-native';
 import styles from './styles';
 import StyledButton from '../StyledButton/StyledButton.js';
+import Login from '../Login/Login.js';
+
 const CarItem = (props) => {
   const { name, tagline, image, taglineCTA } = props.car;
+  const navigation = props.navigation;
 
   return (
     <View style={styles.carContainer}>
@@ -20,9 +23,7 @@ const CarItem = (props) => {
         <StyledButton
           type="primary"
           content="Custom Order"
-          onPress={() => {
-            console.warn('custom order placed');
-          }}
+          onPress={() => navigation?.navigate('Login')}
         ></StyledButton>
         <StyledButton
           type="secondary"
@@ -35,5 +36,4 @@ const CarItem = (props) => {
     </View>
   );
 };
-
 export default CarItem;
